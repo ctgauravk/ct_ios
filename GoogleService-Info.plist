@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>806344482105-0oi0dl4jhdrjrrruka3qr8jkl5qgfjqr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.806344482105-0oi0dl4jhdrjrrruka3qr8jkl5qgfjqr</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>806344482105-gifjp8j6fso210dmf6n8ekh49vjfracj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYYR-Ey_6lHPcZDBB7AlS5k7JGyMeKits</string>
+	<key>GCM_SENDER_ID</key>
+	<string>806344482105</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>clevertap.ct-integration</string>
+	<key>PROJECT_ID</key>
+	<string>ctandroid-e86a1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ctandroid-e86a1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:806344482105:ios:2222f3dd17360c06195ce8</string>
+</dict>
+</plist>
