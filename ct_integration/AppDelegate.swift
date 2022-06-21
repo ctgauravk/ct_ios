@@ -17,10 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+       
         CleverTap.autoIntegrate()
-        self.registerPush()
+        FirebaseApp.configure()
+         self.registerPush()
         CleverTap.setDebugLevel(3)
+        UNUserNotificationCenter.current().delegate = self
+
         return true
     }
     
@@ -43,6 +46,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
         print(token) 
         CleverTap.sharedInstance()?.setPushToken(deviceToken as Data)
+    }
+    
+      func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        completionHandler([.banner, .badge, .sound])
+        
+        CleverTap.sharedInstance()?.handleNotification(withData: notification.request.content.userInfo, openDeepLinksInForeground: true)
+        completionHandler([.badge, .sound, .alert])
     }
 
     // MARK: UISceneSession Lifecycle
